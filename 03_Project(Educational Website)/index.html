@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Wave.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <section id="home" class="header">
+        <nav>
+            <a href="#home"><img src="Images/Logo1.png"></a>
+            <div class="nav-links" id="navLinks">
+                 <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#campus">Campus</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Shaping Minds, Building Futures.</h1>
+            <p>Welcome to SKILL WAVE — where learning inspires innovation and helps students <br> unlock their potential for a brighter future.</p>
+            <a href="#contact" class="hero-btn"> Visit Us For More Details </a>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" class="courses">
+        <h1>Explore Our Courses.</h1>
+        <p>Offering diverse programs designed to prepare students for future careers.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Web Development.</h3>
+                <p>Master the art of building responsive, user-friendly websites using HTML, CSS, and JavaScript with real-world projects and skills.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Data Science.</h3>
+                <p>Gain expertise in analyzing data, applying machine learning, and using Python and SQL to solve complex business challenges effectively.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Graphic Design.</h3>
+                <p>Explore creativity with modern design tools, learn color theory, typography, and create impactful visuals for digital and print media.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus -->
+    <section id="campus" class="campus">
+        <div class="campus-content">
+            <h1>Our Campuses.</h1>
+            <p>We are proud to have modern campuses across the country to support students everywhere.</p>
+            <div class="row">
+                <div class="campus-col">
+                    <img src="Images/karachi.png">
+                    <div class="layer">
+                        <h3><b><u>KARACHI</u></b></h3>
+                    </div>
+                </div>
+
+                <div class="campus-col">
+                    <img src="Images/Lahore.png">
+                    <div class="layer">
+                        <h3><b><u>LAHORE</u></b></h3>
+                    </div>
+                </div>
+
+                <div class="campus-col">
+                    <img src="Images/Islamabad.png">
+                    <div class="layer">
+                        <h3><b><u>ISLAMABAD</u></b></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section id="facilities" class="facilities">
+        <h1>Our Facilities.</h1>
+        <p>We provide top-class facilities to ensure the best learning experience for our students.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="Images/library.png">
+                <h3>World Class Library.</h3>
+                <p>Our library provides thousands of books, journals, and digital resources for students.</p>
+            </div>
+
+             <div class="facilities-col">
+                <img src="Images/basketball.png">
+                    <h3>Playground.</h3>
+                    <p>Spacious playgrounds and sports areas for physical activities and student recreation.</p>
+            </div>
+            
+             <div class="facilities-col">
+                <img src="Images/cafeteria.png">
+                <h3>Tasty and Healthy Food.</h3>
+                <p>Our cafeteria serves fresh, healthy, and affordable meals for everyone on campus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+            <h1>What Our Students Say.</h1>
+            <p>Here are some reviews from our students about their learning journey.</p>
+            <div class="row">
+                <div class="testimonial-col">
+                    <img src="Images/Std2.jpg" >
+                    <div>
+                        <p>
+                            "Joining here was the best decision of my life.
+                            The courses are practical and industry-focused.
+                            Every concept was explained clearly.
+                            I now feel confident about my career."
+                            <h3>Alina Thomson.</h3>
+                            <i class="fa-solid fa-star"></i> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>                        
+                        </p>
+                    </div>
+                </div>
+
+                <div class="testimonial-col">
+                    <img src="Images/user2.jpg" >
+                    <div>
+                        <p>
+                            "The facilities are modern and comfortable.
+                            We get hands-on practice in every class.
+                            Teachers are very cooperative and skilled.
+                            It feels like a second home to me."
+                            <h3>Janson.</h3>
+                            <i class="fa-solid fa-star"></i> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Call to action -->
+    <section id="contact" class="cta">
+        <h1>Enroll For Various Online Courses <br> Anywhere From Pakistan.</h1>
+        <a href="#contact" class="hero-btn">Contact Us</a>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are a leading educational institution committed to providing <br> quality education and fostering innovation. Our mission is to empower students <br> with the skills and knowledge they need to succeed in a rapidly changing world.</p>
+        <div class="icons">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Skill Wave.</p>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

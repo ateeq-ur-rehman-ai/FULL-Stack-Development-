@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Wave.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/Logo1.png"></a>
+            <div class="nav-links" id="navLinks">
+                 <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Blog </a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Shaping Minds, Building Futures.</h1>
+            <p>Welcome to SKILL WAVE — where learning inspires innovation and helps students <br> unlock their potential for a brighter future.</p>
+            <a href="" class="hero-btn"> Visit Us For More Details </a>
+        </div>
+    </section>
+
+<!-- Courses. -->
+    <section class="courses">
+        <h1>Explore Our Courses.</h1>
+        <p>Offering diverse programs designed to prepare students for future careers.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Web Development.</h3>
+                <p>Master the art of building responsive, user-friendly websites using HTML, CSS, and JavaScript with real-world projects and skills.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Data Science.</h3>
+                <p>Gain expertise in analyzing data, applying machine learning, and using Python and SQL to solve complex business challenges effectively.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Graphic Design.</h3>
+                <p>Explore creativity with modern design tools, learn color theory, typography, and create impactful visuals for digital and print media.</p>
+            </div>
+        </div>
+    </section>
+
+<!--Campus -->
+    <section class="campus">
+        <h1>Our Campuses.</h1>
+        <p>We are proud to have modern campuses across the country to support students everywhere.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="Images/london.png">
+                div class="layer">
+                    <h3>Karachi</h3>
+            </div>
+        </div>
+    </section>
+
+
+ <!-- JavaScript. -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
