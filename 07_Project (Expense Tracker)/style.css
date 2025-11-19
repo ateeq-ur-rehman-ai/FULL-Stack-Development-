@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --bg: linear-gradient(135deg, #c9ffbf, #ffafbd);
+  --card: rgba(255, 255, 255, 0.95);
+  --primary: #16a34a;
+  --success: #22c55e;
+  --danger: #dc2626;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  --radius: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.brand h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.brand p {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.container {
+  width: 380px;
+  background: var(--card);
+  padding: 25px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h3 {
+  margin: 25px 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color:bla;
+}
+
+#balance {
+  text-align: center;
+  font-size: 2rem;
+  margin: 15px 0;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.inc-exp-container {
+  background: #fff;
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid #e5e7eb;
+}
+
+.money {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.money-plus {
+  color: var(--success);
+}
+
+.money-minus {
+  color: var(--danger);
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  color: black;
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  display: block;
+  font-size: 0.95rem;
+  padding: 12px;
+  width: 100%;
+  transition: 0.3s;
+  color: black;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.2);
+}
+
+.btn {
+  cursor: pointer;
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 1rem;
+  margin: 20px 0 25px;
+  padding: 12px;
+  width: 100%;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #15803d;
+  transform: translateY(-1px);
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.list li {
+  background: #fff;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+
+.list li:hover {
+  transform: scale(1.02);
+}
+
+.list li.plus {
+  border-left: 6px solid var(--success);
+}
+
+.list li.minus {
+  border-left: 6px solid var(--danger);
+}
+
+.delete-btn {
+  cursor: pointer;
+  background: var(--danger);
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
