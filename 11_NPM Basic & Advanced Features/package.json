@@ -1,0 +1,21 @@
+{
+  "name": "backend-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "node ./script.js",
+    "hello": "node -e \"import chalk from 'chalk'; console.log(chalk.red.bold('Error: Something went wrong!'));\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ateeq Ur Rehman",
+  "license": "ISC",
+  "dependencies": {
+    "accessibility": "^3.0.9",
+    "chalk": "^5.6.2",
+    "one-liner-joke": "^1.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
